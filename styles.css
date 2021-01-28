@@ -1,0 +1,234 @@
+/*family style*/
+* {
+  /*this sign mean it select on all element*/
+  margin: 0; /* to set all margin to 0 can be override or be change*/
+  box-sizing: border-box; /*this function to include padding and border into width and height so padding and border doesnt impact how big width and height is*/
+  list-style: none; /*to make list without any style*/
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #555555 !important  ; /*background color*/
+  font-size: 14px; /*font size*/
+  line-height: 22px; /*spacing each line*/
+  color: #555555; /*font default color can be override or be change*/
+}
+.header {
+  /*header style*/
+  color: #2f3dff; /*font color for the header*/
+  padding: 20px; /*the space between text to border*/
+  text-align: center; /*to center the text*/
+  background: rgb(207, 207, 207); /*background header color*/
+  width: 900px; /*the width of the border*/
+  margin: 0 auto; /*to set the top and bottom 0 and center margin right and left to make it center*/
+}
+.topnav {
+  /*topnav style*/
+  overflow: hidden; /*to show the backgrund below header*/
+  background-color: rgb(207, 207, 207);
+  width: 900px;
+  margin: 0 auto;
+  border-radius: 0 0 20% 20%; /*to make it a little bit curve*/
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left; /*set the text on left*/
+  color: #2f3dff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /*remove default hyperlink style*/
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.5s;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  transition: 1s;
+  color: rgb(35, 6, 90);
+}
+/*font set*/
+.bold {
+  /*to make bold text function better than heading for me*/
+  font-weight: 700; /*to make font more bold */
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px; /*make font not so bold*/
+}
+/*resume setup*/
+.resume {
+  width: 800px; /*set the width of the resume*/
+  height: auto; /*the height of the resume adjust the inside data */
+  display: flex; /*to set the next resume beside the first resume not on the bottom*/
+  margin: 20px auto; /*set top and bottom margin to 50px and left and right on auto to center the resume this function to center the resume*/
+}
+/*left resume setup*/
+.resume_left {
+  width: 280px; /*set the left resume width*/
+  background: #0bb5f4; /*background color for left resume*/
+}
+
+.resume_profile {
+  /*to set img profile size*/
+  width: 100%;
+  height: 420px;
+}
+
+.resume_profile img {
+  /*to fit input image to the desire size */
+  width: 100%;
+  height: 100%;
+}
+
+.resume_content {
+  padding: 0 20px; /*to set padding 0 from top and bottom and 25px from left and right*/
+}
+
+.title {
+  /*title setup give more margin on bottom to make title more clear*/
+  margin-bottom: 20px;
+}
+
+.resume_left .bold {
+  /*override  bold setting only in left resume */
+  color: #fff; /*font color for bold in left resume*/
+}
+
+.regular {
+  /*to change to color inside title for description*/
+  color: #b1eaff;
+}
+/*resume and list setup*/
+.resume_item {
+  /*all resume item setup */
+  padding: 15px; /*padding for top and bottom only */
+  border-bottom: 2px solid #b1eaff; /*border for end of each resume item */
+}
+
+/*resume left list setup*/
+.resume_left ul li {
+  margin-bottom: 10px; /*margin bottom for each list*/
+}
+.resume_left .semi-bold {
+  /*override for color and margin bottom*/
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.data {
+  color: #b1eaff; /*font color for data*/
+}
+
+.resume_skills ul li {
+  /*to change color in skills list*/
+  color: #b1eaff;
+}
+/*skill bar percentage style */
+.skill_progress {
+  /*this is to make full 100% bar behind the bar*/
+  height: 5px; /*to set height for the bar*/
+  background: #009fd9;
+  position: relative; /*this position let other obj goes above this obj*/
+}
+/*the percent i give style width inside index so can modify depend on how big percentage*/
+.skill_progress span {
+  position: absolute; /*this position to overlap obj */
+  height: 100%; /*to set the height adjust as the relative obj*/
+  background: #fff; /*background color on obj*/
+}
+/*to set the hyperlink in left resume*/
+.resume_left .semi-bold a {
+  /*to set the semi bold*/
+  color: #151838;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+/*hover style*/
+.resume_left .semi-bold a:hover {
+  transition: 1s;
+  border-bottom: 0px;
+  color: #ffffff;
+}
+.resume_social {
+  border-bottom: 0px;
+}
+
+/*resume right style*/
+.resume_right {
+  width: 520px; /*set width for right resume*/
+  background: #fff; /*background color*/
+  padding: 25px; /*padding for right resume*/
+}
+
+.resume_right .bold {
+  /*add more bold style in right resume*/
+  color: #0bb5f4;
+}
+.desc {
+  text-align: justify;
+  padding: 5px;
+}
+
+.resume_right ul li {
+  /*to add line and new style for list in right resume*/
+  position: relative; /*same as before to add new obj*/
+}
+
+.date {
+  /*date style almost like semi bold */
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.resume_right ul li .info {
+  /*to give margin after each info*/
+  margin-bottom: 20px;
+}
+.resume_education ul li:before,/*:before function to add something before every new line*/
+.resume_sertification ul li:before {
+  content: ""; /*unfill content just to make shape */
+  position: absolute; /*to make the position to the relative*/
+  top: 9px; /*to make the obj isnt on top of list */
+  left: -23.5px; /*adjust the obj */
+  width: 9px; /*how the big the object or shape is */
+  height: 9px;
+  border: 2px solid #0bb5f4;
+}
+
+.certificate-img img {
+  height: 270px;
+  width: 100%;
+  background-size: cover; /*to make img fit the size that want*/
+  background-position: center;
+}
+.footer {
+  border-radius: 20% 20% 0 0;
+  color: #2f3dff;
+  padding: 20px;
+  text-align: center;
+  background: rgb(207, 207, 207);
+  width: 900px;
+  margin: 0 auto;
+}
+/*for certificate page*/
+.certif-layout {
+  width: 800px;
+  background-color: #0bb5f4;
+}
+.certificate-img-only img {
+  height: 100%;
+  width: 360px;
+  background-size: cover; /*to make img fit the size that want*/
+  background-position: center;
+  display: inline;
+  padding: 5px;
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
